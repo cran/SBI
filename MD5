@@ -1,0 +1,6 @@
+cfc21990596a12e40f73ab9d896745f8 *DESCRIPTION
+350f8276a4107592b5e9ffd0ac3cb6a8 *NAMESPACE
+a501b9445c794a0cc647e60c74f38040 *R/sbi.R
+ec6ed014c14b374f5cdf33ab9e3b8893 *man/BlindingIndex.Rd
+b350399c911b96f4c3ffedf5a0ee35f4 *tests/testthat.R
+a2477aee0eae9439620fd1cf6f2a37ff *tests/testthat/test-sbi.R
