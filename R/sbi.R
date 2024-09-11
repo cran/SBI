@@ -107,7 +107,7 @@ Wilson_CI_z = function(n_AA, n_BA, n_AB, n_BB, z=qnorm(0.975)){
   l2      = (2*n_AB+z^2)/2/(n+z^2) - z/(n+z^2)*sqrt(z^2/4 + n_AB*(1-p_B_hat))
   u1      = (2*n_AA+z^2)/2/(m+z^2) + z/(m+z^2)*sqrt(z^2/4 + n_AA*(1-p_A_hat))
   u2      = (2*n_AB+z^2)/2/(n+z^2) + z/(n+z^2)*sqrt(z^2/4 + n_AB*(1-p_B_hat))
-  delta   = z* sqrt( l1*(1-l1)/(n_AA + n_BA) + u2*(1-u2)/(n_AB + n_BB))
+  delta   = sqrt( (p_A_hat-l1)^2 + (u2-p_B_hat)^2 )
   epsilon = sqrt( (p_A_hat-u1)^2 + (l2-p_B_hat)^2 )
   L       = theta_hat-delta
   U       = theta_hat+epsilon
