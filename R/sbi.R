@@ -93,8 +93,8 @@ check_input = function(n_AA, n_BA, n_AB, n_BB, tolerance, switch_point, conf.lev
 #' @keywords internal
 Wilson_CI_z = function(n_AA, n_BA, n_AB, n_BB, z=qnorm(0.975)){
   # This routine takes the entries from a 2 x 2 table as the arguments and returns the estimate for
-  # the difference of the probabilities p_A-p_B along with the Wilson-CI.
-  # The Wilson-CI is based on Newcombe 1998, PMID: 9595617, Section 2, equations 10.
+  # the difference of the probabilities p_A-p_B along with the Newcombe-Wilson-CI.
+  # The Newcombe-Wilson-CI is based on Newcombe 1998, PMID: 9595617, Section 2, equations 10.
 
   m         = n_AA + n_BA
   n         = n_AB + n_BB
@@ -157,10 +157,8 @@ z_calc_special_case_cubic = function(n_AA=n_BA, n_BA, n_AB=0, n_BB){
 #'
 #' This routine takes the entries from a 2x2 table as the arguments
 #' and returns the estimate for the difference of the probabilities p_A-p_B
-#' along with the Wilson-CI. It also finds a p-value dual to the Wilson method.
-#' For more details, see the paper "A simple blinding index for randomized
-#' controlled trials" by Petroff, Bacak, Dagres, Dilk and Wachter, which has
-#' been submitted for publication.
+#' along with the Newcombe-Wilson-CI. It also finds a p-value dual to the Newcombe-Wilson method.
+#' For more details, see Petroff, Bacak, Dagres, Dilk, Wachter: A simple blinding index for randomized controlled trials. Contemp Clin Trials Commun. 2024 Nov 26;42:101393. doi: 10.1016/j.conctc.2024.101393. PMID: 39686958.
 #'
 #' @param n_AA Number of patients in Group A guessing that they are in Group A. A non-negative number, usually an integer.
 #' @param n_BA Number of patients in Group A guessing that they are in Group B. A non-negative number, usually an integer.

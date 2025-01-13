@@ -42,10 +42,8 @@ that is, as.table(cbind(c(n_AA, n_BA), c(n_AB, n_BB))).}
 \description{
 This routine takes the entries from a 2x2 table as the arguments
 and returns the estimate for the difference of the probabilities p_A-p_B
-along with the Wilson-CI. It also finds a p-value dual to the Wilson method.
-For more details, see the paper "A simple blinding index for randomized
-controlled trials" by Petroff, Bacak, Dagres, Dilk and Wachter, which has
-been submitted for publication.
+along with the Newcombe-Wilson-CI. It also finds a p-value dual to the Newcombe-Wilson method.
+For more details, see Petroff, Bacak, Dagres, Dilk, Wachter: A simple blinding index for randomized controlled trials. Contemp Clin Trials Commun. 2024 Nov 26;42:101393. doi: 10.1016/j.conctc.2024.101393. PMID: 39686958.
 }
 \examples{
 BlindingIndex(50, 50, 50, 50)

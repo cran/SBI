@@ -1,6 +1,6 @@
-03125ce1d5dab643083d7ffa07f6024b *DESCRIPTION
+b1041924d0c47fbc1d0a46d27b12dc41 *DESCRIPTION
 350f8276a4107592b5e9ffd0ac3cb6a8 *NAMESPACE
-7c091a553b2326e8b7a47a4d51989c50 *R/sbi.R
-ec6ed014c14b374f5cdf33ab9e3b8893 *man/BlindingIndex.Rd
+d1f5cc1ee484029cccd2fd9b05c9372a *R/sbi.R
+fe280d236c72b0ac4bf813d260c793c4 *man/BlindingIndex.Rd
 b350399c911b96f4c3ffedf5a0ee35f4 *tests/testthat.R
 a2477aee0eae9439620fd1cf6f2a37ff *tests/testthat/test-sbi.R
